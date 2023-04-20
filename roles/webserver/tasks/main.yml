@@ -1,0 +1,13 @@
+---
+- name: "Instala pacotes de dependencias do sistema operacional"
+  apt:
+    name: "{{ item }}"
+    state: latest
+  become: yes
+  with_items:
+    - php7.3
+    - apache2
+    - libapache2-mod-php7.3
+    - php7.3-gd
+    - php-ssh2
+    - php7.3-mysql

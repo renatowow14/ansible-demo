@@ -1,0 +1,7 @@
+---
+wp_username: wordpress
+wp_db_name: wordpress_db
+wp_user_password: 12345
+wp_installation_dir: "/var/www/wordpress"
+apache_workdir: "/var/www/"
+mysql_bind_address: 0.0.0.0

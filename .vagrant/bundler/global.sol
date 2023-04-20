@@ -1,0 +1,1 @@
+{"dependencies":[["net-ssh",[">= 2.6.5","< 8.0.0"]],["net-scp",[">= 1.1"]],["log4r",["~> 1.1"]],["vagrant-scp",["= 0.5.9"]],["concurrent-ruby",["~> 1.0"]],["i18n",[">= 0"]],["micromachine",[">= 2","< 4"]],["vagrant-vbguest",["= 0.31.0"]]],"checksum":"09599692cd95513476b75188bf643c13de5b821294996d50b16d49f02de7a57c","vagrant_version":"2.3.4"}
