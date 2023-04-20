@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
     wordpress.vm.box = "debian/buster64"
     wordpress.vm.network "private_network", ip: "172.17.177.40", virtualbox__intnet: true
     wordpress.vm.network "forwarded_port", guest: 80, host: 80
+    config.ssh.guest_port = 2222
     wordpress.vbguest.auto_update = true
   
     wordpress.vm.provision "shell", inline: <<-SHELL
@@ -25,6 +26,7 @@ Vagrant.configure("2") do |config|
     mysql.vm.hostname = "mysql"
     mysql.vm.box = "debian/buster64"
     mysql.vm.network "private_network", ip: "172.17.177.41", virtualbox__intnet: true
+    config.ssh.guest_port = 2200
     mysql.vbguest.auto_update = true
   
     config.vm.provision "shell", inline: <<-SHELL
